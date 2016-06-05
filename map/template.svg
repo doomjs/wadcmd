@@ -1,0 +1,10 @@
+<svg width="<%=width %>" height="<%=height %>" version="1.1" xmlns="http://www.w3.org/2000/svg" style="background-color: #000">
+    <desc><%=description %></desc>
+    <defs></defs>
+    <g transform="matrix(<%=zoom %>,0,0,<%=zoom %>,<%=translateX %>,<%=translateY %>)">
+        <path d="<%=path.diff %>" style="stroke-width: <%=strokeWidth %>;" stroke="<%=colors.diff %>" fill="transparent"></path>
+        <path d="<%=path.nomap %>" style="stroke-width: <%=strokeWidth %>;" stroke="<%=colors.nomap %>" fill="transparent"></path>
+        <path d="<%=path.hidden %>" style="stroke-width: <%=strokeWidth %>;" stroke="<%=colors.hidden %>" fill="transparent"></path>
+        <path d="<%=path.wall %>" style="stroke-width: <%=strokeWidth %>;" stroke="<%=colors.wall %>" fill="transparent"></path>
+    </g>
+</svg>
